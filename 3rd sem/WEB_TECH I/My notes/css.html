@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Topics Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background: #555;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .example {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .example code {
+            display: block;
+            background: #333;
+            color: #fff;
+            padding: 0.5rem;
+            overflow-x: auto;
+        }
+        
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }</style>
+    </style>
+</head>
+<body>
+    <h1
+    <header>
+        <h1>CSS Topics Showcase</h1>
+        <p>Explore various CSS topics with examples!</p>
+    </header>
+
+    <nav>
+        <a href="#colors">Colors</a>
+        <a href="#typography">Typography</a>
+        <a href="#box-model">Box Model</a>
+        <a href="#layout">Layout</a>
+        <a href="#animations">Animations</a>
+    </nav>
+
+    <section id="colors">
+        <h2>Colors</h2>
+        <p>CSS allows you to define colors using names, HEX, RGB, or HSL values.</p>
+        <div class="example">
+            <p style="color: red;">This text is red using a color name.</p>
+            <p style="color: #3498db;">This text is blue using a HEX value.</p>
+            <p style="color: rgb(255, 99, 71);">This text is tomato using RGB.</p>
+            <code>
+                p { color: red; }<br>
+                p { color: #3498db; }<br>
+                p { color: rgb(255, 99, 71); }
+            </code>
+        </div>
+    </section>
+
+    <section id="typography">
+        <h2>Typography</h2>
+        <p>Control font family, size, weight, style, and line height.</p>
+        <div class="example">
+            <p style="font-family: 'Courier New', Courier, monospace;">This is a monospace font.</p>
+            <p style="font-size: 24px;">This text is 24px in size.</p>
+            <p style="font-weight: bold;">This text is bold.</p>
+            <code>
+                p { font-family: 'Courier New', Courier, monospace; }<br>
+                p { font-size: 24px; }<br>
+                p { font-weight: bold; }
+            </code>
+        </div>
+    </section>
+
+
+    <section id="box-model">
+        <h2>Box Model</h2>
+        <p>The CSS box model defines the content, padding, border, and margin of an element.</p>
+        <div class="example">
+            <div style="width: 150px; padding: 20px; border: 5px solid black; margin: 10px; background: #f0f0f0;">
+                Example Box
+            </div>
+            <code>
+                div {
+                    width: 150px;
+                    padding: 20px;
+                    border: 5px solid black;
+                    margin: 10px;
+                    background: #f0f0f0;
+                }
+            </code>
+        </div>
+    </section>
+
+    <section id="layout">
+        <h2>Layout</h2>
+        <p>Use flexbox or grid to create responsive layouts.</p>
+        <div class="example">
+            <div style="display: flex; gap: 10px;">
+                <div style="background: #ffcccb; padding: 10px;">Flex Item 1</div>
+                <div style="background: #add8e6; padding: 10px;">Flex Item 2</div>
+                <div style="background: #90ee90; padding: 10px;">Flex Item 3</div>
+            </div>
+            <code>
+                div {
+                    display: flex;
+                    gap: 10px;
+                }
+                div > div {
+                    background: #ffcccb;
+                    padding: 10px;
+                }
+            </code>
+        </div>
+    </section>
+
+    <section id="animations">
+        <h2>Animations</h2>
+        <p>Bring your website to life with CSS animations.</p>
+        <div class="example">
+            <div style="width: 50px; height: 50px; background: red; animation: move 2s infinite;"></div>
+            <code>
+                @keyframes move {
+                    0% { transform: translateX(0); }
+                    50% { transform: translateX(50px); }
+                    100% { transform: translateX(0); }
+                }
+
+                div {
+                    animation: move 2s infinite;
+                }
+            </code>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Raghav panthi </p>
+    </footer>
+</body>
+</html>

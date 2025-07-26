@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 5: Advanced JavaScript Concepts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+     <script src="jsdatatype.js"></script>
+</head>
+<body>
+    <h1>Unit 5: Advanced JavaScript Concepts</h1>
+    <p><strong>Duration:</strong> 6 hours</p>
+    <p>This unit explores advanced JavaScript features such as ES6+ syntax, promises, async/await, error handling, JSON, and AJAX to enable sophisticated web interactions.</p>
+
+    <h2>5.1 ES6+ Features</h2>
+    <p>Learn about the latest features introduced in ES6 and later versions of JavaScript.</p>
+    <ul>
+        <li><strong>5.1.1</strong> Let, Const, Arrow Functions, Promises, etc.</li>
+        <li><strong>5.1.2</strong> Objects</li>
+    </ul>
+
+    <ul>
+        <li><strong>5.1.1</strong> Let, Const, Arrow Functions, Promises, etc.</li>
+        <li><strong>Example:</strong> 
+            <pre>
+            <code>
+                // Using let
+                let x = 10;
+                if (true) {
+                let x = 20;
+                console.log(x); // 20
+                }
+                console.log(x); // 10
+
+                // Using const
+                const y = 30;
+                // y = 40; // Error: Assignment to constant variable.
+
+                // Arrow Function
+                const add = (a, b) => a + b;
+                console.log(add(5, 3)); // 8
+
+                // Promise
+                const promise = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve('Success!');
+                }, 1000);
+                });
+
+                promise.then(value => {
+                console.log(value); // Success!
+                });
+            </code>
+            </pre>
+        </li>
+        <ul>
+            <li><strong>Let:</strong> Block-scoped variable declaration.</li>
+            <li><strong>Const:</strong> Block-scoped constant declaration.</li>
+            <li><strong>Arrow Functions:</strong> Shorter syntax for writing functions.</li>
+            <li><strong>Promises:</strong> Used for asynchronous operations.</li>
+        </ul>
+
+        <li><strong>5.1.2</strong> Objects</li>
+        <li><strong>Example:</strong> 
+            <pre>
+            <code>
+                // Object Literal
+                const person = {
+                name: 'John Doe',
+                age: 30,
+                greet() {
+                    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+                }
+                };
+
+                person.greet(); // Hello, my name is John Doe and I am 30 years old.
+
+                // Object Destructuring
+                const { name, age } = person;
+                console.log(name); // John Doe
+                console.log(age); // 30
+
+                // Object Spread Operator
+                const newPerson = { ...person, location: 'New York' };
+                console.log(newPerson); // { name: 'John Doe', age: 30, location: 'New York' }
+            </code>
+            </pre>
+    </ul>
+
+    <h2>5.2 Regular Expressions</h2>
+    <p>An introduction to working with patterns and string matching using regular expressions.</p>
+
+    <ul>
+        <li><strong>5.2.1</strong> Basic Syntax</li>
+        <li><strong>Example:</strong> 
+            <pre>
+            <code>
+                const regex = /hello/;
+                const str = 'Hello, World!';
+                const result = regex.test(str);
+                console.log(result); // false
+            </code>
+            </pre>
+        <li><strong>5.2.2</strong> Metacharacters</li>
+
+
+        <li><strong>5.2.3</strong> Quantifiers</li>
+
+        <li><strong>5.2.4</strong> Character Classes</li>
+
+        <li><strong>5.2.5</strong> Flags</li>
+    <h2>5.3 Asynchronous Programming</h2>
+
+
+    <p>Learn how to work with asynchronous JavaScript code using promises, async/await, and the Fetch API.</p>
+    
+    <ul>
+        <li><strong>5.3.1</strong> Promises</li>
+        <li><strong>5.3.2</strong> Async/Await</li>
+        <li><strong>5.3.3</strong> Fetch</li>
+    </ul>
+
+    <h2>5.4 Error Handling</h2>
+    <p>Learn how to identify, catch, and manage errors effectively in JavaScript applications.</p>
+    <ul>
+        <li><strong>5.4.1</strong> Try/Catch</li>
+
+
+        <li><strong>5.4.2</strong> Error Object</li>
+    </ul>
+
+    <h2>5.5 Introduction to JSON</h2>
+    <ul>
+
+        <li><strong>5.5.1</strong> JSON Syntax and Structure</li>
+        
+        <li><strong>5.5.2</strong> Simple Example</li>
+    </ul>
+
+    <h2>5.6 Introduction to AJAX</h2>
+    <p>Understand how to use AJAX for asynchronous data fetching and updating web pages dynamically.</p>
+</body>
+</html>

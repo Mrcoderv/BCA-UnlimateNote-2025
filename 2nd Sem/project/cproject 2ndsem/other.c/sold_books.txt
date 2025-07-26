@@ -1,0 +1,3 @@
+raghav,9866412176,math,123,asmita,250.00,2023
+uuu,9866412176,nepali12,12,nepalsarkar,100.00,2019
+rrr,99999999,nepali12,12,nepalsarkar,100.00,2019

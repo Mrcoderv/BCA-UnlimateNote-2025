@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jsdatatype.css">
+
+    <script >
+        alert("Hello from internal js ");
+    </script>
+    <script src="jsdatatype.js"></script>
+  
+    <title>JavaScript introduction </title>
+</head>
+<body>
+    <h1>Primitive Data Types in JavaScript</h1>
+    <p>Primitive data types are the most basic data types available within the JavaScript language. There are 7 types of primitive data types in JavaScript:</p>
+    <ol>
+        <li>
+            <strong>Number</strong>: int, float, double, long, short, byte<br>
+            <em>Example:</em> 10, 10.5, 10e<br>
+            <em>How to set:</em><br>
+            <code>let age = 10;</code>
+        </li>
+        <li>
+            <strong>String</strong>: used to store text<br>
+            <em>Example:</em> "Hello, World!", 'JavaScript', `Template literal`<br>
+            <em>How to set:</em><br>
+            <code>let name = "John";</code>
+        </li>
+        <li>
+            <strong>Boolean</strong>: represents a logical entity and can have two values: true and false<br>
+            <em>Example:</em> true, false<br>
+            <em>How to set:</em><br>
+            <code>let isActive = true;</code>
+        </li>
+        <li>
+            <strong>Undefined</strong>: a variable that has not been assigned a value<br>
+            <em>Example:</em> undefined<br>
+            <em>How to set:</em><br>
+            <code>let x;</code>
+        </li>
+        <li>
+            <strong>Null</strong>: represents the intentional absence of any object value<br>
+            <em>Example:</em> null<br>
+            <em>How to set:</em><br>
+            <code>let y = null;</code>
+        </li>
+        <li>
+            <strong>Symbol</strong>: a unique and immutable primitive value and may be used as the key of an object property<br>
+            <em>Example:</em> <code>Symbol('description')</code><br>
+            <em>How to set:</em><br>
+            <code>let sym = Symbol('unique');</code>
+        </li>
+        <li>
+            <strong>BigInt</strong>: represents whole numbers larger than 2<sup>53</sup> - 1<br>
+            <em>Example:</em> 1234567890123456789012345678901234567890n<br>
+            <em>How to set:</em><br>
+            <code>let bigIntNum = 1234567890123456789012345678901234567890n;</code>
+        </li>
+    </ol>
+</body>
+    <h1> operator type </h1>
+    <p> JavaScript operators are used to assign values, compare values, perform arithmetic operations, and more. </p>
+    <h2>Arithmetic Operators</h2>
+    <p>Used to perform arithmetic on numbers:</p>
+    <ul>
+        <li>Addition (+): <code>let sum = 10 + 5; // 15</code></li>
+        <li>Subtraction (-): <code>let difference = 10 - 5; // 5</code></li>
+        <li>Multiplication (*): <code>let product = 10 * 5; // 50</code></li>
+        <li>Division (/): <code>let quotient = 10 / 5; // 2</code></li>
+        <li>Modulus (%): <code>let remainder = 10 % 3; // 1</code></li>
+        <li>Exponentiation (**): <code>let power = 10 ** 2; // 100</code></li>
+    </ul>
+<h1>non primitive data type </h1>
+    <h2>Non-Primitive Data Types</h2>
+    <p>Non-primitive data types are more complex data types and can be used to store collections of data or more complex entities.</p>
+    <table border="1">
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Object</td>
+            <td>Used to store collections of data and more complex entities.</td>
+            <td><code>let person = { name: "John", age: 30 };</code></td>
+        </tr>
+        <tr>
+            <td>Array</td>
+            <td>Used to store multiple values in a single variable.</td>
+            <td><code>let colors = ["red", "green", "blue"];</code></td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>Used to define a block of code designed to perform a particular task.</td>
+            <td><code>function greet() { return "Hello, World!"; }</code></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td>Used to work with dates and times.</td>
+            <td><code>let now = new Date();</code></td>
+        </tr>
+        <tr>
+            <td>RegExp</td>
+            <td>Used for matching text with a pattern.</td>
+            <td><code>let pattern = /w+/g;</code></td>
+        </tr>
+        <tr>
+            <td>Map</td>
+            <td>Used to store key-value pairs.</td>
+            <td><code>let map = new Map(); map.set('key', 'value');</code></td>
+        </tr>
+        <tr>
+            <td>Set</td>
+            <td>Used to store unique values of any type.</td>
+            <td><code>let set = new Set([1, 2, 3]);</code></td>
+        </tr>
+    </table>
+    <h2>Assignment Operators</h2>
+    <p>Used to assign values to variables:</p>
+    <ul>
+        <li>Assignment (=): <code>let x = 10;</code></li>
+        <li>Addition assignment (+=): <code>x += 5; // x = x + 5</code></li>
+        <li>Subtraction assignment (-=): <code>x -= 5; // x = x - 5</code></li>
+        <li>Multiplication assignment (*=): <code>x *= 5; // x = x * 5</code></li>
+        <li>Division assignment (/=): <code>x /= 5; // x = x / 5</code></li>
+        <li>Modulus assignment (%=): <code>x %= 5; // x = x % 5</code></li>
+        <li>Exponentiation assignment (**=): <code>x **= 2; // x = x ** 2</code></li>
+    </ul>
+
+    <h2>Comparison Operators</h2>
+    <p>Used to compare two values:</p>
+    <ul>
+        <li>Equal to (==): <code>10 == 10; // true</code></li>
+        <li>Not equal to (!=): <code>10 != 5; // true</code></li>
+        <li>Strict equal to (===): <code>10 === 10; // true</code></li>
+        <li>Strict not equal to (!==): <code>10 !== 5; // true</code></li>
+        <li>Greater than (>): <code>10 > 5; // true</code></li>
+        <li>Less than (<): <code>10 < 5; // false</code></li>
+        <li>Greater than or equal to (>=): <code>10 >= 5; // true</code></li>
+        <li>Less than or equal to (<=): <code>10 <= 5; // false</code></li>
+    </ul>
+
+    <h2>Logical Operators</h2>
+    <p>Used to perform logical operations:</p>
+    <ul>
+        <li>Logical AND (&&): <code>true && false; // false</code></li>
+        <li>Logical OR (||): <code>true || false; // true</code></li>
+        <li>Logical NOT (!): <code>!true; // false</code></li>
+    </ul>
+
+    <h2>Bitwise Operators</h2>
+    <p>Used to perform bitwise operations:</p>
+    <ul>
+        <li>AND (&): <code>5 & 1; // 1</code></li>
+        <li>OR (|): <code>5 | 1; // 5</code></li>
+        <li>NOT (~): <code>~5; // -6</code></li>
+        <li>XOR (^): <code>5 ^ 1; // 4</code></li>
+        <li>Left shift (<<): <code>5 << 1; // 10</code></li>
+        <li>Right shift (>>): <code>5 >> 1; // 2</code></li>
+        <li>Zero fill right shift (>>>): <code>5 >>> 1; // 2</code></li>
+    </ul>
+
+    <h2>Other Operators</h2>
+    <p>Other useful operators:</p>
+    <ul>
+        <li>Conditional (ternary) operator (?:): <code>let result = (10 > 5) ? 'Yes' : 'No'; // 'Yes'</code></li>
+        <li>Typeof operator: <code>typeof 10; // 'number'</code></li>
+        <li>Instanceof operator: <code>{} instanceof Object; // true</code></li>
+    </ul>
+    <h1> Control Flow Statements</h1>
+    <p>Control flow is the order in which the computer executes statements in a script. A control flow statement is used to specify the order in which statements are executed.</p>
+
+    <h2>If Statement</h2>
+    <p>Used to execute a block of code if a specified condition is true:</p>
+    <pre><code>
+if (condition) {
+    // code to be executed if condition is true
+}
+    </code></pre>
+
+    <h2>If...Else Statement</h2>
+    <p>Used to execute a block of code if a condition is true, otherwise another block of code is executed:</p>
+    <pre><code>
+if (condition) {
+    // code to be executed if condition is true
+} else {
+    // code to be executed if condition is false
+}
+    </code></pre>
+
+    <h2>Else If Statement</h2>
+    <p>Used to specify a new condition to test if the first condition is false:</p>
+    <pre><code>
+if (condition1) {
+    // code to be executed if condition1 is true
+} else if (condition2) {
+    // code to be executed if condition1 is false and condition2 is true
+} else {
+    // code to be executed if both condition1 and condition2 are false
+}
+    </code></pre>
+
+    <h2>Switch Statement</h2>
+    <p>Used to perform different actions based on different conditions:</p>
+    <pre><code>
+switch (expression) {
+    case value1:
+        // code to be executed if expression === value1
+        break;
+    case value2:
+        // code to be executed if expression === value2
+        break;
+    default:
+        // code to be executed if expression doesn't match any case
+}
+    </code></pre>
+    <h1 > Looping statement:</h1>
+
+    <h2>For Loop</h2>
+    <p>Used to execute a block of code a number of times:</p>
+    <pre><code>
+for (initialization; condition; increment) {
+    // code to be executed
+}
+    </code></pre>
+
+    <h2>While Loop</h2>
+    <p>Used to execute a block of code as long as a specified condition is true:</p>
+    <pre><code>
+while (condition) {
+    // code to be executed
+}
+<h3> Example:</h3>
+let i=0;
+while(i<4){
+    console.log(i);
+    i++;
+}
+    </code></pre>
+
+    
+
+    <h2>Do...While Loop</h2>
+    <p>Similar to the while loop, but the block of code is executed once before the condition is tested:</p>
+    <pre><code>
+do {
+    // code to be executed
+} while (condition);
+<h3>Example:</h3>
+let i=0;
+do{ 
+    console.log(i);
+    i++;
+}while(i<4);
+    </code></pre>
+    <h2>For...In Loop</h2>
+    <p>Used to loop through the properties of an object:</p>
+    <pre><code>
+for (variable in object) {
+    // code to be executed
+}
+<h3>Example:</h3>
+let person = { name: "John", age: 30 };
+for (let key in person) {
+    console.log(key+": "+person[key]); // john, 30
+}
+    </code></pre>
+    <h2>For...Of Loop</h2>
+    <p>Used to loop through the values of an iterable object:</p>
+    <pre><code>
+for (variable of iterable) {
+    // code to be executed
+}
+<h3>Example:</h3>
+let colors = ["red", "green", "blue"];
+console.log("Displaying color"); 
+for (let color of colors) {
+    console.log(color); // red, green, blue
+    }
+    </code></pre>
+
+    <h1> Control Flow Modifiers</h1>
+    <p>Control flow modifiers alter the normal flow of execution in a script.</p>
+
+    <h2>Break Statement</h2>
+    <p>Used to terminate the current loop, switch, or label statement and transfer program control to the statement following the terminated statement:</p>
+    <pre><code>
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break; // exits the loop when i is 5
+    }
+    console.log(i);
+}
+    </code></pre>
+
+    <h2>Continue Statement</h2>
+    <p>Used to skip the current iteration of a loop and continue with the next iteration:</p>
+    <pre><code>
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        continue; // skips the iteration when i is 5
+    }
+    console.log(i);
+}
+    </code></pre>
+    <h1>Functions</h1>
+<p>Functions are blocks of code that can be defined once and executed multiple times. They can accept parameters and return values.</p>
+ <h2>Defining a Function</h2>
+<p>Functions are defined using the <code>function</code> keyword, followed by the function name, a list of parameters in parentheses, and the code block in curly braces:</p>
+<pre><code>
+function greet() {
+    return "Hello, World!";
+}
+console.log(greet()); // Hello, World!
+</code></pre>
+<h2>Function Parameters</h2>
+<p>Functions can accept parameters, which are variables that are passed to the function when it is called:</p>
+<pre><code>
+    <h3>Example:</h3>
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greet("John")); // Hello, John! 
+</code></pre>
+    <h2>Arrow Functions</h2>
+<p>Arrow functions provide a more concise syntax for defining functions:</p>
+<pre><code>
+    <h3>Example:</h3>
+let greet = (name) => {
+    return "Hello, " + name + "!";
+};
+console.log(greet("Raghav JI")); // Hello, Raghav JI!
+</code></pre>
+<h2>Callback function:</h2>
+<p>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.</p>
+<pre><code>
+    <h3>Example:</h3>
+function greet(name, callback) {
+    return callback(name);
+}
+function sayHello(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greet("John", sayHello)); // Hello, John!
+</code></pre>
+<h2>Anonymous Function</h2>
+<p>Anonymous functions are functions that are not defined with a name:</p>
+<pre><code>
+    <h3>Example:</h3>
+let greet = function(name) {
+    return "Hello, " + name + "!";
+};
+console.log(greet("John")); // Hello, John!
+</code></pre>
+<h2>Nested function</h2>
+<p>Functions can be defined inside other functions:</p>
+<pre><code>
+    <h3>Example:</h3>
+function greet(name) {
+    function sayHello() {
+        return "Hello, " + name + "!";
+    }
+    return sayHello();
+}
+console.log(greet("John")); // Hello, John!
+</code></pre>
+
+<h2>Return Statement</h2>
+    <p>Used to exit a function and return a value:</p>
+    <pre><code>
+        <h3>Example:</h3>
+function sum(a, b) {
+    return a + b; // exits the function and returns the sum
+}
+console.log(sum(5, 10)); // 15
+    </code></pre>
+
+    <h2>Throw Statement</h2>
+    <p>Used to throw an exception handeling .</p>
+    <pre><code>
+        <h3>Example:</h3>
+function checkAge(age) {
+    if (age < 18) {
+        throw 'Underage'; // throws an exception if age is less than 18
+    }
+    return 'Adult';
+}
+try {
+    console.log(checkAge(15));
+} catch (e) {
+    console.log(e); // Underage
+}
+    </code></pre>
+
+<h2 > Regular expression</h2>
+<p>Regular expressions are patterns used to match character combinations in strings. They can be used to search, edit, or manipulate text and data.</p>
+<h4>Creating a Regular Expression</h4>
+<p>Regular expressions can be created using the <code>RegExp</code> constructor or by using a literal syntax:</p>
+<pre><code>
+    <h3>Example:</h3>
+let pattern = /w+/g;
+let pattern = new RegExp('w+', 'g');
+</code></pre>
+<h4>Regular Expression Methods</h4>
+<p>Regular expressions have methods that can be used to perform operations on strings:</p>
+<ul>
+    <li><code>test()</code>: Tests for a match in a string and returns <code>true</code> or <code>false</code>.</li>
+    <li><code>exec()</code>: Searches for a match in a string and returns the result as an array.</li>
+    <li><code>match()</code>: Searches for a match in a string and returns an array of matches.</li>
+    <li><code>search()</code>: Searches for a match in a string and returns the index of the match.</li>
+    <li><code>replace()</code>: Searches for a match in a string and replaces the match with a new string.</li>
+    <li><code>split()</code>: Splits a string into an array of substrings based on a regular expression.</li>
+</ul>
+<h4>Regular Expression Patterns</h4>
+<p>Regular expressions can contain patterns that match specific characters or character combinations:</p>
+<ul>
+    <li><code>.</code>: Matches any single character except newline characters.</li>
+    <li><code>\d</code>: Matches any digit character.</li>
+    <li><code>\w</code>: Matches any word character.</li>
+    <li><code>\s</code>: Matches any whitespace character.</li>
+    <li><code>[abc]</code>: Matches any character inside the brackets.</li>
+    <li><code>[^abc]</code>: Matches any character not inside the brackets.</li>
+    <li><code>a|b</code>: Matches either <code>a</code> or <code>b</code>.</li>
+    <li><code>\b</code>: Matches a word boundary.</li>
+    <li><code>^</code>: Matches the beginning of a string.</li>
+    <li><code>$</code>: Matches the end of a string.</li>
+</ul>
+<h4>Regular Expression Flags</h4>
+<p>Regular expressions can have flags that are used to perform different operations:</p>
+<ul>
+    <li><code>i</code>: Perform case-insensitive matching.</li>
+    <li><code>g</code>: Perform a global match (find all matches rather than stopping after the first match).</li>
+    <li><code>m</code>: Perform multiline matching.</li>
+</ul>
+<H4>quantifiers</H4>
+<p>Quantifiers specify the number of occurrences of a character or group of characters:</p>
+<ul>
+    <li><code>*</code>: Matches zero or more occurrences of the preceding character.</li>
+    <li><code>+</code>: Matches one or more occurrences of the preceding character.</li>
+    <li><code>$</code>: </li>
+    <li><code>?</code>: Matches zero or one occurrence of the preceding character.</li>
+    <li><code>{n}</code>: Matches exactly <code>n</code> occurrences of the preceding character.</li>
+    <li><code>{n,}</code>: Matches <code>n</code> or more occurrences of the preceding character.</li>
+    <li><code>{n,m}</code>: Matches between <code>n</code> and <code>m</code> occurrences of the preceding character.</li>
+</ul>
+
+<h4>Regular Expression Examples</h4>
+<p>Examples of regular expressions:</p>
+<pre><code>
+    <h3>Example:</h3>
+let pattern = /w+/g;
+let text = 'Hello, World!';
+console.log(pattern.test(text)); // true
+console.log(pattern.exec(text)); // ['Hello']
+console.log(text.match(pattern)); // ['Hello']
+console.log(text.search(pattern)); // 0
+console.log(text.replace(pattern, 'Hi')); // Hi, World!
+console.log(text.split(pattern)); // ['Hello', 'World!']
+</code></pre>
+
+
+</body>
+</html>

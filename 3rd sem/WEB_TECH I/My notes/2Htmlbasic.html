@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jsdatatype.css">
+       <title>Unit 2 HTML  </title>
+       <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+       
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        </style>
+</head>
+<body>
+
+    <h1>Unit 2: HTML Basics</h1>
+        <p><strong>Duration:</strong> 4 hours <strong>2024 Pokhara university bca syllabus  </strong></p> 
+    <p>This unit covers the basics of HTML, including elements, attributes, and semantic markup etc.</p>
+    <h2>2.1 Introduction</h2>
+    <h3>2.1.1 History </h3>
+    <div> 
+    <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of web pages using markup. HTML elements are the building blocks of HTML pages.</p>
+    <p>HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991.</p>
+    <p>Initially, HTML 1.0 was released for basic web pages.</p>
+    <p>Subsequent updates included HTML 2.0, 3.2, and 4.01 with additional features.</p>
+    <p>HTML5, released in 2014, is the latest version and supports new features like audio, video, canvas, and semantic tags.</p>
+     </div>
+    <h3>2.1.2 Concept of Tag</h3>
+    <p>HTML tags are keywords surrounded by angle brackets like <code>&lt;tagname&gt;</code>. They are used to define the structure of an HTML document.</p>
+    <p>Tags are usually paired, with an opening tag <code>&lt;tagname&gt;</code> and a closing tag <code>&lt;/tagname&gt;</code>.</p>   
+    <h3>2.1.3 Basic Structure of HTML Document</h3>
+    <p>Every HTML document should have the following structure:</p> 
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Hello, World!&lt;/h1&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <h3>2.1.4 HTML Elements and attributes </h3>
+    <p>HTML elements are the building blocks of HTML pages. An HTML element is defined by a start tag, some content, and an end tag:</p>
+    some tage are:
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                <td>Defines HTML headings, with &lt;h1&gt; being the highest (or most important) level and &lt;h6&gt; the least.</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Defines a paragraph.</td>
+            </tr>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Defines a hyperlink, which is used to link from one page to another.</td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td>Defines an image.</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
+                <td>Defines lists. &lt;ul&gt; is an unordered list, &lt;ol&gt; is an ordered list, and &lt;li&gt; defines a list item.</td>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</td>
+                <td>Defines a table. &lt;table&gt; is the table element, &lt;tr&gt; defines a table row, and &lt;td&gt; defines a table cell.</td>
+            </tr>
+            <tr>
+                <td>&lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;</td>
+                <td>Defines a form for user input. &lt;form&gt; is the form element, &lt;input&gt; defines an input field, and &lt;textarea&gt; defines a multi-line input field.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Attributes</h3>
+    <p>Attributes provide additional information about HTML elements. They are always included in the opening tag and usually come in name/value pairs like <code>name="value"</code>.</p>
+    <p>Some common attributes include:</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>href</code></td>
+                <td>Specifies the URL of a link (used in <code>&lt;a&gt;</code> tags).</td>
+            </tr>
+            <tr>
+                <td><code>src</code></td>
+                <td>Specifies the source of an image (used in <code>&lt;img&gt;</code> tags).</td>
+            </tr>
+            <tr>
+                <td><code>alt</code></td>
+                <td>Provides alternative text for an image (used in <code>&lt;img&gt;</code> tags).</td>
+            </tr>
+            <tr>
+                <td><code>id</code></td>
+                <td>Specifies a unique id for an element.</td>
+            </tr>
+            <tr>
+                <td><code>class</code></td>
+                <td>Specifies one or more class names for an element (used for CSS styling).</td>
+            </tr>
+            <tr>
+                <td><code>style</code></td>
+                <td>Specifies inline CSS styles for an element.</td>
+            </tr>
+            <tr>
+                <td><code>title</code></td>
+                <td>Provides additional information about an element (displayed as a tooltip).</td>
+            </tr>
+        </tbody>
+    </table>
+<h3>2.1.5 Basic Text Formatting Tags</h3>
+<p>HTML provides several tags for formatting text:</p>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>&lt;strong&gt; or &lt;b&gt;</code></td>
+            <td>Bold text</td>
+            <td><strong>This is bold text</strong></td>
+        </tr>
+        <tr>
+            <td><code>&lt;em&gt;</code></td>
+            <td>Italic text</td>
+            <td><em>This is italic text</em></td>
+        </tr>
+        <tr>
+            <td><code>&lt;u&gt;</code></td>
+            <td>Underlined text</td>
+            <td><u>This is underlined text</u></td>
+        </tr>
+        <tr>
+            <td><code>&lt;del&gt;</code></td>
+            <td>Deleted text</td>
+            <td><del>This is deleted text</del></td>
+        </tr>
+        <tr>
+            <td><code>&lt;ins&gt;</code></td>
+            <td>Inserted text</td>
+            <td><ins>This is inserted text</ins></td>
+        </tr>
+        <tr>
+            <td><code>&lt;sub&gt;</code></td>
+            <td>Subscript text</td>
+            <td>This is <sub>subscript</sub> text</td>
+        </tr>
+        <tr>
+            <td><code>&lt;sup&gt;</code></td>
+            <td>Superscript text</td>
+            <td>This is <sup>superscript</sup> text</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>2.2 List , Links and images </h2>
+<h3>2.2.1 Lists</h3>
+<p>HTML provides three types of lists:</p>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Definition</th>
+            <th>Syntax</th>
+            <th>Output</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Unordered List</td>
+            <td>Uses <code>&lt;ul&gt;</code> tag with list items <code>&lt;li&gt;</code>.</td>
+            <td>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </td>
+            <td>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Ordered List</td>
+            <td>Uses <code>&lt;ol type="i"&gt; or &lt;ol&gt; </code> tag with list items in 1,2, order 3 <code>&lt;li&gt;</code>.</td>
+            <td>
+                <pre><code>&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </td>
+            <td>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>Definition List</td>
+            <td>Uses <code>&lt;dl&gt;</code> tag with terms <code>&lt;dt&gt;</code> and descriptions <code>&lt;dd&gt;</code>.</td>
+            <td>
+                <pre><code>&lt;dl&gt;
+    &lt;dt&gt;Term 1&lt;/dt&gt;
+    &lt;dd&gt;Description 1&lt;/dd&gt;
+    &lt;dt&gt;Term 2&lt;/dt&gt;
+    &lt;dd&gt;Description 2&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+            </td>
+            <td>
+                <dl>
+                    <dt>Term 1</dt>
+                    <dd>Description 1</dd>
+                    <dt>Term 2</dt>
+                    <dd>Description 2</dd>
+                </dl>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h3>2.2.2 Creating Hyperlinks</h3>
+<p>Hyperlinks are created using the <code>&lt;a&gt;</code> tag. The <code>href</code> attribute specifies the URL of the page the link goes to:</p>
+<pre>
+    <code>
+        &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+    </code>
+</pre>
+<p>There are different types of links:</p>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Internal Link</td>
+            <td>Links to another page within the same website.</td>
+            <td><code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code></td>
+        </tr>
+        <tr>
+            <td>External Link</td>
+            <td>Links to a page on a different website.</td>
+            <td><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></td>
+        </tr>
+        <tr>
+            <td>Anchor Link</td>
+            <td>Links to a specific section within the same page.</td>
+            <td><code>&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;</code></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<h3>2.2.3 Images</h3>
+<p>Images in HTML are defined with the <code>&lt;img&gt;</code> tag. The <code>src</code> attribute specifies the URL of the image file:</p>
+<pre>
+    <code>
+        &lt;img src="image.jpg" alt="Description of image"&gt;
+    </code>
+</pre>
+<p>The <code>alt</code> attribute provides alternative text for the image, which is displayed if the image cannot be loaded or by screen readers for visually impaired users.</p>
+<h2>Adding image </h2>
+<p>Image tag is used to add the image </p>
+<img src="image.jpg" alt="Jai hanuman ji" width="350" height="300">
+<pre>
+    <code>
+        &lt;img src="image.jpg" alt="Jai hanuman ji" width="200" height="200"&gt;
+    </code>
+</pre>
+<h2>2.4 Tables and Forms</h2>
+<h3>2.4.1  HTML Table Elements</h3>
+<p>Tables are defined using the  tag. <code>&lt;table&gt;</code> 
+<p><code>&lt;th&gt;</code> → Table header</p>
+<p><code>&lt;tr&gt;</code> → Table row</p>
+<p><code>&lt;td&gt;</code> → Table data</p>
+
+<h3>Merging Rows and Columns:</h3>
+<p>HTML allows you to merge cells using the <code>colspan</code> and <code>rowspan</code> attributes:</p>
+<pre>
+    <code>
+        &lt;table border="1"&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2"&gt;Merged Columns&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td rowspan="2"&gt;Merged Rows&lt;/td&gt;
+                &lt;td&gt;Cell 1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Cell 2&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    </code>
+</pre>
+
+<h3>2.4.2 HTML Form Elements</h3>
+<p>Forms are used to collect user input. The <code>&lt;form&gt;</code> tag is used to create a form, and various form elements are used to collect input:</p>
+<form action="submit.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    
+    <input type="submit" value="Submit">
+</form>
+<p>Form elements:</p>
+<ul>
+    <li>Text field: <code>&lt;input type="text"&gt;</code></li>
+    <li>Radio button: <code>&lt;input type="radio"&gt;</code></li>
+    <li>Checkbox: <code>&lt;input type="checkbox"&gt;</code></li>
+    <li>Select dropdown:
+        <pre><code>&lt;select&gt;
+    &lt;option&gt;Option 1&lt;/option&gt;
+    &lt;option&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+    </li>
+    <li>Textarea: <code>&lt;textarea&gt;&lt;/textarea&gt;</code></li>
+</ul>
+<p>Input Date & Time:</p>
+<pre><code>&lt;input type="date"&gt;
+&lt;input type="time"&gt;</code></pre>
+<p>Form Methods:</p>
+<ul>
+    <li>GET → Displays data in the URL</li>
+    <li>POST → Secure, does not display data in the URL</li>
+</ul>
+
+<h2>2.5 Semantic Elements</h2>
+<p>Semantic elements provide meaning to the content they enclose. They help search engines and screen readers understand the structure of a page:</p>
+<ul>
+    <li><code>&lt;header&gt;</code> → Header section</li>
+    <li><code>&lt;nav&gt;</code> → Navigation links</li>
+    <li><code>&lt;main&gt;</code> → Main content</li>
+    <li><code>&lt;article&gt;</code> → Article content</li>
+    <li><code>&lt;section&gt;</code> → Section of content</li>
+    <li><code>&lt;aside&gt;</code> → Sidebar content</li>
+    <li><code>&lt;footer&gt;</code> → Footer section</li>
+</ul>
+
+<h2>2.6 Multimedia Elements</h2>
+<p>HTML5 introduced new multimedia elements for audio and video:</p>
+<ul>
+    <li><code>&lt;audio&gt;</code> → Audio player</li>
+    <li><code>&lt;video&gt;</code> → Video player</li>
+</ul>
+<video controls width="320" height="240">
+    <source src="video.mp4" type="video/mp4">
+</video>
+<p>Example:</p>
+<pre>
+    <code>
+        &lt;audio controls&gt;
+            &lt;source src="audio.mp3" type="audio/mp3"&gt;
+        &lt;/audio&gt;
+        &lt;video controls width="320" height="240"&gt;
+            &lt;source src="video.mp4" type="video/mp4"&gt;
+        &lt;/video&gt;
+    </code>
+</pre>
+<H3>2.7 div, span, aside, iframe, canvas</H3>
+
+<h2>HTML Tags: Definition and Example</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Definition</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&lt;div&gt;</td>
+            <td>Defines a division or section in an HTML document.</td>
+            <td><code>&lt;div&gt;This is a div&lt;/div&gt;</code></td>
+        </tr>
+        <tr>
+            <td>&lt;span&gt;</td>
+            <td>Defines an inline container for text.</td>
+            <td><code>&lt;span&gt;This is a span&lt;/span&gt;</code></td>
+        </tr>
+        <tr>
+            <td>&lt;aside&gt;</td>
+            <td>Defines content aside from the main content.</td>
+            <td><code>&lt;aside&gt;This is an aside&lt;/aside&gt;</code></td>
+        </tr>
+        <tr>
+            <td>&lt;iframe&gt;</td>
+            <td>Defines an inline frame to embed another document.</td>
+            <td><code>&lt;iframe src="example.html"&gt;&lt;/iframe&gt;</code></td>
+        </tr>
+        <tr>
+            <td>&lt;canvas&gt;</td>
+            <td>Defines a canvas for drawing graphics using JavaScript.</td>
+            <td><code>&lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<P>FINISHED</P>
+
+    
+</body>
+</html>

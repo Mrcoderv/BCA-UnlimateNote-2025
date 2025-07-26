@@ -1,0 +1,3 @@
+nepali12,nepalsarkar,12,100.00,2019,98
+english12,nepalsarkar,12,100.00,2020,25
+math,asmita,123,250.00,2023,3

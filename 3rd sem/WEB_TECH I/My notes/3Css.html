@@ -1,0 +1,518 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jsdatatype.css">
+       <title>Unit 3:  Cascading Style Sheets </title>
+       <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+       
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        </style>
+<body>
+<h1>Unit 3:  Cascading Style Sheets </h1>
+<p><strong>Duration:</strong> 8 hours</p>
+<h2>3.1 Need of CSS</h2>
+<p>CSS (Cascading Style Sheets) is used to style HTML elements. It separates content (HTML) from design, making web pages visually appealing and easier to maintain.</p>
+<h2>3.2 CSS Basics</h2>
+<h3>3.2.1.1 CSS Syntax</h3>
+<p>CSS syntax consists of a selector and a declaration block. The selector specifies the HTML element to style, and the declaration block contains style rules.</p>
+<ul>
+    <li><strong>Selector:</strong> The HTML element to style.</li>
+    <li><strong>Declaration Block:</strong> Contains style rules in key-value pairs.</li>
+</ul>
+Example:
+<pre>
+<code>
+    /* CSS Syntax */
+    h1 {
+        color: blue;
+        font-size: 24px;
+    }
+
+</code>
+</pre>
+
+<h3>3.2.1.1 selectors</h3>
+<p>CSS selectors are used to target specific HTML elements for styling. There are different types of selectors like element, class, id, and pseudo-class selectors.</p>
+<table border="1">
+    <tr>
+        <th>Selector Type</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>Element Selector</td>
+        <td>Selects elements based on their tag name.</td>
+        <td><code>h1 { color: blue; }</code></td>
+    </tr>
+    <tr>
+        <td>Class Selector</td>
+        <td>Selects elements based on their class attribute.</td>
+        <td><code>.highlight { background-color: yellow; }</code></td>
+    </tr>
+    <tr>
+        <td>ID Selector</td>
+        <td>Selects elements based on their id attribute.</td>
+        <td><code>#header { font-size: 20px; }</code></td>
+    </tr>
+    <tr>
+        <td>Pseudo-class Selector</td>
+        <td>Selects elements based on their state or position.</td>
+        <td><code>a:hover { text-decoration: underline; }</code></td>
+    </tr>
+</table>
+<h3>Declarations:</h3>
+<p>Declarations are key-value pairs that define the style of an element. Each declaration consists of a property and a value separated by a colon.</p>
+<ul>
+    <li><strong>Property:</strong> The CSS attribute to style.</li>
+    <li><strong>Value:</strong> The value assigned to the property.</li>
+</ul>
+Example:
+<pre>
+<code>
+    /* Declaration Block */
+    h1 {
+        color: blue;
+        font-size: 24px;
+    }
+</code>
+</pre>
+<h3>
+    Types of CSS:</h3>
+<p>CSS can be applied in three ways: inline, internal, and external. Inline CSS is applied directly to an HTML element, internal CSS is defined in the head section of an HTML document, and external CSS is stored in a separate file and linked to the HTML document.</p>
+<h3>3.2.1.2 Types of CSS</h3>
+<p>CSS can be applied in three ways: inline, internal, and external. Each method has its own use case and advantages.</p>
+<table border="1">
+    <tr>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Example</th>
+        <th>Pros</th>
+        <th>Cons</th>
+    </tr>
+    <tr>
+        <td>Inline CSS</td>
+        <td>Applied directly to an HTML element using the style attribute.</td>
+        <td><code>&lt;h1 style="color: blue;"&gt;Hello World&lt;/h1&gt;</code></td>
+        <td>
+            <ul>
+                <li>Quick to apply</li>
+                <li>Overrides other styles</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Not reusable</li>
+                <li>Harder to maintain</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Internal CSS</td>
+        <td>Defined in the head section of an HTML document using the <code>&lt;style&gt;</code> tag.</td>
+        <td>
+            <pre><code>
+&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+            color: blue;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+            </code></pre>
+        </td>
+        <td>
+            <ul>
+                <li>Useful for single-page styles</li>
+                <li>Overrides external styles</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Less maintainable than external CSS</li>
+                <li>Not reusable across multiple pages</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>External CSS</td>
+        <td>Stored in a separate file with a <code>.css</code> extension and linked to the HTML document using the <code>&lt;link&gt;</code> tag.</td>
+        <td>
+            <pre><code>
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+            </code></pre>
+        </td>
+        <td>
+            <ul>
+                <li>Most maintainable</li>
+                <li>Reusable across multiple pages</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Requires additional HTTP request</li>
+                <li>May be overridden by inline or internal styles</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<h4>Ranking:</h4>
+<p>The ranking of CSS types in terms of specificity and maintainability:</p>
+<ol>
+    <li><strong>External CSS:</strong> Most maintainable and reusable, as styles are defined in a separate file.</li>
+    <li><strong>Internal CSS:</strong> Useful for single-page styles, but less maintainable than external CSS.</li>
+    <li><strong>Inline CSS:</strong> Least maintainable, as styles are applied directly to elements, making it harder to manage.</li>
+</ol>
+<h3>Grouping Selectors</h3>
+<p>Grouping selectors allows applying the same styles to multiple elements. This helps to reduce redundancy and keep the CSS code clean and efficient.</p>
+<pre><code>
+/* Grouping Selectors */
+h1, h2, h3 {
+    color: blue;
+}
+</code></pre>
+
+<h3>Pseudo-classes & Pseudo-elements:</h3>
+<p>Pseudo-classes and pseudo-elements are used to style elements based on their state or position. They provide additional styling options beyond standard selectors.</p>
+<ul>
+    <li><strong>Pseudo-classes:</strong> Select elements based on user interaction or state.</li>
+    <li><strong>Pseudo-elements:</strong> Style specific parts of an element.</li>
+</ul>
+Example:
+<pre>
+<code>
+/* Pseudo-classes */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-elements */
+
+p::first-line {
+    font-weight: bold;
+}
+</code>
+</pre>
+
+<h3>comments</h3>
+<p>Comments in CSS are used to add notes or descriptions to the code. They are ignored by the browser and are useful for documenting styles or temporarily disabling code.</p>
+<pre><code>
+/* This is a CSS comment */
+</code></pre>
+<h2>3.2.2 CSS Specificity</h2>
+<table border="1">
+    <tr>
+        <th>Selector Type</th>
+        <th>Specificity</th>
+        <th>Syntax</th>
+    </tr>
+    <tr>
+        <td>Inline Styles</td>
+        <td>1000</td>
+        <td><code>&lt;h1 style="color: blue;"&gt;Hello&lt;/h1&gt;</code></td>
+    </tr>
+    <tr>
+        <td>ID Selectors</td>
+        <td>0100</td>
+        <td><code>#header { color: blue; }</code></td>
+    </tr>
+    <tr>
+        <td>Class/Attribute Selectors</td>
+        <td>0010</td>
+        <td><code>.highlight { color: blue; }</code></td>
+    </tr>
+    <tr>
+        <td>Element/Type Selectors</td>
+        <td>0001</td>
+        <td><code>h1 { color: blue; }</code></td>
+    </tr>
+    <tr>
+        <td>Universal Selector</td>
+        <td>0000</td>
+        <td><code>* { color: blue; }</code></td>
+    </tr>
+</table>
+</table>
+<p>Specificity is calculated based on the number of occurrences of each selector type. The specificity value is a four-digit number, with each digit representing a selector type.</p>
+<h3>3.2.3 Internal vs External CSS</h3>
+<table border="1">
+    <tr>
+        <th>Criteria</th>
+        <th>Internal CSS</th>
+        <th>External CSS</th>
+    </tr>
+    <tr>
+        <td>Definition</td>
+        <td>Defined within the <code>&lt;style&gt;</code> tag in the head section of an HTML document.</td>
+        <td>Stored in a separate file with a <code>.css</code> extension and linked using the <code>&lt;link&gt;</code> tag.</td>
+    </tr>
+    <tr>
+        <td>Usage</td>
+        <td>Useful for single-page styles or when specific styles are needed for a single document.</td>
+        <td>Best for applying consistent styles across multiple pages.</td>
+    </tr>
+    <tr>
+        <td>Maintainability</td>
+        <td>Less maintainable as styles are embedded within the HTML document.</td>
+        <td>More maintainable as styles are separated from the HTML document.</td>
+    </tr>
+    <tr>
+        <td>Reusability</td>
+        <td>Not reusable across multiple pages.</td>
+        <td>Reusable across multiple pages.</td>
+    </tr>
+    <tr>
+        <td>Performance</td>
+        <td>May increase the size of the HTML document, potentially affecting load times.</td>
+        <td>Requires an additional HTTP request but keeps HTML document size smaller.</td>
+    </tr>
+    <tr>
+        <td>Specificity</td>
+        <td>Overrides external styles but can be overridden by inline styles.</td>
+        <td>Can be overridden by internal and inline styles.</td>
+    </tr>
+</table>
+
+<H3>3.2.4 Style Text Fonts, Color, Links</H3>
+<table border="1">
+    <tr>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>Fonts</td>
+        <td>Use <code>font-family</code>, <code>font-size</code>, and <code>font-weight</code> to style text fonts.</td>
+        <td>
+            <pre><code>
+/* Font Family */
+p {
+    font-family: Arial, sans-serif;
+}
+
+/* Font Size */
+h1 {
+    font-size: 24px;
+}
+
+/* Font Weight */
+strong {
+    font-weight: bold;
+}
+            </code></pre>
+        </td>
+    </tr>
+    <tr></tr>
+        <td>Colors</td>
+        <td>Use <code>color</code> and <code>background-color</code> with names, hex, or RGB values to style text colors.</td>
+        <td>
+            <pre><code>
+/* Text Color */
+p {
+    color: blue;
+}
+
+/* Background Color */
+div {
+    background-color: #f0f0f0;
+}
+
+/* RGB Color */
+h1 {
+    color: rgb(255, 0, 0);
+}
+            </code></pre>
+        </td>
+    </tr>
+    <tr>
+        <td>Links</td>
+        <td>Style links using <code>:hover</code>, <code>:visited</code>, and <code>:active</code> pseudo-classes.</td>
+        <td>
+            <pre><code>
+/* Link Hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Visited Link */
+a:visited {
+    color: purple;
+}
+
+/* Active Link */
+a:active {
+    color: red;
+}
+            </code></pre>
+        </td>
+    </tr>
+</table>
+<h2>3.3 CSS Box Model</h2>
+<p>The CSS box model defines the content, padding, border, and margin of an element. Understanding the box model is essential for creating layouts and spacing elements on a web page.</p>
+<h3>3.3.1 Box Model Properties</h3>
+<table border="1">
+    <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>Width</td>
+        <td>Sets the width of an element's content area.</td>
+        <td><code>width: 200px;</code></td>
+    </tr>
+    <tr>
+        <td>Height</td>
+        <td>Sets the height of an element's content area.</td>
+        <td><code>height: 100px;</code></td>
+    </tr>
+    <tr>
+        <td>Padding</td>
+        <td>Space between the content and the border.</td>
+        <td><code>padding: 10px;</code></td>
+    </tr>
+    <tr>
+        <td>Border</td>
+        <td>Border around the padding and content.</td>
+        <td><code>border: 1px solid black;</code></td>
+    </tr>
+    <tr>
+        <td>Margin</td>
+        <td>Space outside the border.</td>
+        <td><code>margin: 20px;</code></td>
+    </tr>
+</table>
+<h3>3.3.2 Box Model Example</h3>
+<div style="width: 150px; padding: 20px; border: 5px solid black; margin: 10px; background: #f0f0f0;">
+    Example Box
+</div>
+<code>
+    div {
+        width: 150px;
+        padding: 20px;
+        border: 5px solid black;
+        margin: 10px;
+        background: #f0f0f0;
+    }
+</code>
+<h2>3.4 CSS Layouts</h2>
+
+<h3>3.4.1 Flexbox Layout</h3>
+<p>Flexbox is a layout model that allows elements to align and distribute space within a container. It provides a more efficient way to create responsive layouts compared to traditional methods.</p>
+<h4>
+    Flexbox Properties:</h4>
+<ul>
+    <li><strong>display:</strong> Defines a flex container.</li>
+    <li><strong>flex-direction:</strong> Specifies the direction of the flex container.</li>
+    <li><strong>justify-content:</strong> Aligns items along the main axis.</li>
+    <li><strong>align-items:</strong> Aligns items along the cross axis.</li>
+    <li><strong>flex:</strong> Specifies the flexibility of a flex item.</li>
+</ul>
+<h3>3.4.2 Grid Layout</hh3>
+<p>Grid layout is a two-dimensional layout system that allows elements to be placed in rows and columns. It provides a powerful way to create complex layouts with precise control over the placement of elements.</p>
+<h4>Grid Properties:</h4>
+<ul>
+    <li><strong>display:</strong> Defines a grid container.</li>
+    <li><strong>grid-template-columns:</strong> Specifies the size of grid columns.</li>
+    <li><strong>grid-template-rows:</strong> Specifies the size of grid rows.</li>
+    <li><strong>grid-gap:</strong> Sets the gap between grid items.</li>
+    <li><strong>grid-column:</strong> Specifies the grid columns a grid item spans.</li>
+</ul>
+<h3>3.4.3 Responsive Design</h3>
+<p>Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. It uses a combination of flexible grids, layouts, images, and CSS media queries to create a responsive user experience.</p>
+<h4>Media Queries:</h4>
+<p>Media queries are used to apply different styles based on the device's characteristics, such as screen width, height, orientation, and resolution. They allow developers to create responsive designs that adapt to different devices and screen sizes.</p>
+<pre><code>
+/* Media Query Example */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+</code></pre>
+<h3>3.4.4 CSS Frameworks</h3>
+<p>CSS frameworks are pre-designed libraries that provide a set of styles, components, and layouts to help developers build responsive websites quickly. Popular CSS frameworks include Bootstrap, Foundation, and Bulma.</p>
+<h4>Benefits of CSS Frameworks:</h4>
+<ul>
+    <li>Consistent design across multiple pages.</li>
+    <li>Responsive layouts out of the box.</li>
+    <li>Reusable components like buttons, forms, and navigation bars.</li>
+</ul>
+<h3>3.4.5 CSS Preprocessors</h3>
+<p>CSS preprocessors are tools that extend the functionality of CSS by adding features like variables, nesting, and mixins. They help developers write cleaner, more maintainable CSS code and improve the efficiency of the styling process.</p>
+<h4>Popular CSS Preprocessors:</h4>
+
+<ul>
+    <li><strong>Sass:</strong> Syntactically Awesome Stylesheets.</li>
+    <li><strong>Less:</strong> Leaner Style Sheets.</li>
+    <li><strong>Stylus:</strong> Expressive, dynamic, and robust CSS.</li>
+</ul>
+<h3>3.4.6 CSS Animation</h3>    
+<h2>3.6	 CSS Preprocessors (SASS, LESS)</h2>
+<h3>3.6.1	SASS</h3>
+<p>Sass (Syntactically Awesome Stylesheets) is a CSS preprocessor that extends the functionality of CSS with features like variables, nesting, and mixins. It helps developers write cleaner, more maintainable CSS code and improve the efficiency of the styling process.</p>
+<h4>Sass Features:</h4>
+<ul>
+    <li><strong>Variables:</strong> Define reusable values for colors, fonts, and other properties.</li>
+    <li><strong>Nesting:</strong> Organize CSS rules in a hierarchical structure for better readability.</li>
+    <li><strong>Mixins:</strong> Create reusable blocks of styles that can be included in multiple rules.</li>
+    <li><strong>Functions:</strong> Define custom functions to generate dynamic styles based on input values.</li>
+</ul>
+<h3>3.6.2	LESS</h3>
+<p>Less (Leaner Style Sheets) is a CSS preprocessor that extends the functionality of CSS with features like variables, mixins, and functions. It helps developers write cleaner, more maintainable CSS code and improve the efficiency of the styling process.</p>
+<h4>Less Features:</h4>
+<ul>
+    <li><strong>Variables:</strong> Define reusable values for colors, fonts, and other properties.</li>
+    <li><strong>Mixins:</strong> Create reusable blocks of styles that can be included in multiple rules.</li>
+    <li><strong>Functions:</strong> Define custom functions to generate dynamic styles based on input values.</li>
+    <li><strong>Nesting:</strong> Organize CSS rules in a hierarchical structure for better readability.</li>
+</ul>
+<h3>3.6.3	Comparison</h3>
+<table border="1">
+    <tr>
+        <th>Feature</th>
+        <th>Sass</th>
+        <th>Less</th>
+    </tr>
+    <tr>
+        <td>Variables</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Mixins</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Functions</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>Nesting</td>
+        <td>Yes</td>
+        <td>Yes</td>
+    </tr>
+</table>
+
+</code>
+
+
+
+
+</body>
+</html>

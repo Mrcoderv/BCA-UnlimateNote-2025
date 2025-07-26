@@ -1,0 +1,7 @@
+1,ram,raj,tanahu
+,ramprashad
+,2nd,987765332
+12,Shyam,poudel,lalitpur
+,hari poudel
+,third,9874646433
+0,,,,,,
