@@ -23,7 +23,7 @@ The BCA program spans **eight semesters**, covering technical, analytical, and m
 | CMP 116 | Computer Fundamental and Application     | 3       |
 | CMP 117 | Programming Logic and Techniques         | 3       |
 | CMP 111 | Computer Application Workshop            | 1       |
-➡️ *Detailed syllabus coming soon*
+
 
 ### 📊 Second Semester
 | Code   | Course                                   | Credits |
@@ -34,7 +34,7 @@ The BCA program spans **eight semesters**, covering technical, analytical, and m
 | CMP 118 | Programming in C                         | 3       |
 | ELX 112 | Microprocessor & Computer Architecture   | 3       |
 | PRJ 151 | Project I                                | 1       |
-➡️ *Detailed syllabus coming soon*
+
 
 ### 💻 Third Semester
 | Code   | Course                                   | Credits |
@@ -44,7 +44,7 @@ The BCA program spans **eight semesters**, covering technical, analytical, and m
 | CMP 221 | System Analysis & Project Management     | 3       |
 | CMP 380 | Web Technologies I                       | 3       |
 | CMP 230 | Operating System                         | 3       |
-➡️ *Detailed syllabus coming soon*
+
 
 ### 🔍 Fourth Semester
 | Code   | Course                                   | Credits |
@@ -55,7 +55,7 @@ The BCA program spans **eight semesters**, covering technical, analytical, and m
 | MTH 320 | Probability and Statistics               | 3       |
 | CMP 402 | Web Technologies II                      | 3       |
 | PRJ 251 | Project II                               | 2       |
-➡️ *Detailed syllabus coming soon*
+
 
 ### 🌐 Fifth Semester
 | Code   | Course                                   | Credits |
@@ -65,7 +65,7 @@ The BCA program spans **eight semesters**, covering technical, analytical, and m
 | CMP 336 | Data Communication & Computer Network    | 3       |
 | ELE 322 | Research Methodology                     | 3       |
 | MTH 330 | Mathematical Foundation of CS            | 3       |
-➡️ *Detailed syllabus coming soon*
+
 
 ### 📈 Sixth Semester
 | Code   | Course                                   | Credits |
@@ -76,7 +76,7 @@ The BCA program spans **eight semesters**, covering technical, analytical, and m
 | MGT 322 | Organization Management                  | 3       |
 | N/A     | Elective I                               | 2       |
 | PRJ 351 | Project III                              | 3       |
-➡️ *Detailed syllabus coming soon*
+
 
 ### 📱 Seventh Semester
 | Code   | Course                                   | Credits |
@@ -86,7 +86,7 @@ The BCA program spans **eight semesters**, covering technical, analytical, and m
 | ECO 311 | Applied Economics                        | 3       |
 | INT 461 | Internship                               | 3       |
 | N/A     | Elective II                              | 3       |
-➡️ *Detailed syllabus coming soon*
+
 
 ### ☁️ Eighth Semester
 | Code   | Course                                   | Credits |
@@ -95,7 +95,7 @@ The BCA program spans **eight semesters**, covering technical, analytical, and m
 | CMP 416 | Digital Economy                          | 3       |
 | N/A     | Elective III                             | 3       |
 | PRJ 451 | Project IV                               | 5       |
-➡️ *Detailed syllabus coming soon*
+
 
 ---
 
